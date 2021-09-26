@@ -1,10 +1,8 @@
 <?php
-    // Dランク早解きセット　ボーダー柄
-    $n = rtrim(fgets(STDIN));
-    $n1 = str_repeat('#', 10);
-    $n2 = str_repeat('.', 10);
-    for ($i = 1; $i <= $n; $i++) {
-        echo $n1 . "\n";
-        echo $n2 . "\n";
-    }
+    // Dランク早解きセット　縦書き
+    $input_line = rtrim(fgets(STDIN));
+    $num = mb_strlen($input_line);
+    for ($i = 0; $i < $num; $i++) {
+    echo mb_substr($input_line, $i, 1) . "\n";
+}
 ?>
