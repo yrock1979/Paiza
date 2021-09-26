@@ -1,5 +1,10 @@
 <?php
-    // Dランク早解セット 靴のサイズ
-    $size = rtrim(fgets(STDIN));
-        echo number_format($size-18 , 1) . " " . sprintf("%.1f", $size-18.5) . "\n";
+    // Dランク早解きセット　ボーダー柄
+    $n = rtrim(fgets(STDIN));
+    $n1 = str_repeat('#', 10);
+    $n2 = str_repeat('.', 10);
+    for ($i = 1; $i <= $n; $i++) {
+        echo $n1 . "\n";
+        echo $n2 . "\n";
+    }
 ?>
